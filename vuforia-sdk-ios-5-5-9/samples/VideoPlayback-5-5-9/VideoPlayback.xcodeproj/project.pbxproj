@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18EB63541ACCAB8D00EF1C28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18EB63531ACCAB8D00EF1C28 /* Localizable.strings */; };
+		814E9C541CD2B0430062E51C /* front.png in Resources */ = {isa = PBXBuildFile; fileRef = 814E9C531CD2B0430062E51C /* front.png */; };
 		8F75AE9D1C73E2A50083ADFB /* VuforiaSizzleReel_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F75AE9C1C73E2A50083ADFB /* VuforiaSizzleReel_1.mp4 */; };
 		8F75AE9F1C73E36F0083ADFB /* VuforiaSizzleReel_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8F75AE9E1C73E36F0083ADFB /* VuforiaSizzleReel_2.mp4 */; };
 		D21B07EC1A1B4AA20041ECF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B07EB1A1B4AA20041ECF3 /* main.m */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		18EB63531ACCAB8D00EF1C28 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		814E9C531CD2B0430062E51C /* front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = front.png; path = "../../../../../../Google Drive/2016 Spring/304_appitecture/App/Model/Avery hall/facade image/front.png"; sourceTree = "<group>"; };
 		8F75AE9C1C73E2A50083ADFB /* VuforiaSizzleReel_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = VuforiaSizzleReel_1.mp4; path = Resources/Assets/VideoPlayback/VuforiaSizzleReel_1.mp4; sourceTree = "<group>"; };
 		8F75AE9E1C73E36F0083ADFB /* VuforiaSizzleReel_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = VuforiaSizzleReel_2.mp4; path = Resources/Assets/VideoPlayback/VuforiaSizzleReel_2.mp4; sourceTree = "<group>"; };
 		D21B07E61A1B4AA20041ECF3 /* VidPlayback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VidPlayback.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,6 +263,7 @@
 		D21B08161A1B4D320041ECF3 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				814E9C531CD2B0430062E51C /* front.png */,
 				D21B08361A1B5B930041ECF3 /* VideoPlayback */,
 			);
 			name = Assets;
@@ -425,6 +428,7 @@
 				FBE8C8CD1A8A6EBE001E6858 /* StonesAndChips.xml in Resources */,
 				FBE8C8C81A8A6EBE001E6858 /* start_large_press.png in Resources */,
 				FBE8C8CE1A8A6EBE001E6858 /* VP_about.html in Resources */,
+				814E9C541CD2B0430062E51C /* front.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +489,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -506,7 +511,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 			};
 			name = Debug;
 		};
@@ -528,6 +532,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -543,7 +548,6 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 			};
 			name = Release;
 		};

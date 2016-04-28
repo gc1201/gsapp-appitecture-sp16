@@ -7,7 +7,13 @@
 
 #import "SampleAppAboutViewController.h"
 
-@interface SampleAppAboutViewController ()
+@interface SampleAppAboutViewController (){
+    UIButton *secondfButton;
+    UIButton *thirdfButton;
+    UIButton *fourthfButton;
+    UIButton *sevenfButton;
+}
+
 
 @end
 
@@ -18,10 +24,10 @@
 {
     [super viewDidLoad];
     
-    self.appTitle = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"VuforiaSampleAppName"];
-    self.appAboutPageName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"VuforiaSampleAppAboutPage"];
+    //self.appTitle = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"VuforiaSampleAppName"];
+    //self.appAboutPageName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"VuforiaSampleAppAboutPage"];
     
-    [self loadWebView];
+    //[self loadWebView];
     
     // we set the UINavigationControllerDelegate
     // so that we can enforce portrait only for this view controller
@@ -31,6 +37,54 @@
                                              selector:@selector(dismissAppController:)
                                                  name:@"kDismissAppViewController"
                                                object:nil];
+    
+    
+    UIImage *img = [UIImage imageNamed:@"front.png"];
+    UIImageView *iv = [[UIImageView alloc] initWithImage:img];
+    [self.view addSubview:iv];
+    
+    // 1. creating and setting buttons
+    secondfButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    secondfButton. frame = CGRectMake(50, 80, 200, 40);
+    secondfButton.backgroundColor = [UIColor blueColor];
+    [secondfButton setTitle:@"2F" forState:UIControlStateNormal];
+    [secondfButton addTarget:self action:@selector(cameraDevice) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:secondfButton];
+    
+    // 2. creating and setting buttons
+    thirdfButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    thirdfButton. frame = CGRectMake(50, 160, 200, 40);
+    thirdfButton.backgroundColor = [UIColor blueColor];
+    [thirdfButton setTitle:@"3F" forState:UIControlStateNormal];
+    [thirdfButton addTarget:self action:@selector(cameraDevice) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:thirdfButton];
+    
+    // 3. creating and setting buttons
+    fourthfButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    fourthfButton. frame = CGRectMake(50, 240, 200, 40);
+    fourthfButton.backgroundColor = [UIColor blueColor];
+    [fourthfButton setTitle:@"4F" forState:UIControlStateNormal];
+    [fourthfButton addTarget:self action:@selector(cameraDevice) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:fourthfButton];
+    
+    // 4. creating and setting buttons
+    sevenfButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    sevenfButton. frame = CGRectMake(50, 320, 200, 40);
+    sevenfButton.backgroundColor = [UIColor blueColor];
+    [sevenfButton setTitle:@"7F" forState:UIControlStateNormal];
+    [sevenfButton addTarget:self action:@selector(cameraDevice) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:sevenfButton];
+    
+     
+    
+     
+
+    
+    
+    
+    
+
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated

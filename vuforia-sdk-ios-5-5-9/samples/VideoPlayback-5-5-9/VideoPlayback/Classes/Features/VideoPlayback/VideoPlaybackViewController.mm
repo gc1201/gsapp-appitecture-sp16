@@ -53,7 +53,7 @@ countries.
 - (void)loadView
 {
     // Custom initialization
-    self.title = @"Video Playback";
+    self.title = @"TEST";
     
     if (self.ARViewPlaceholder != nil) {
         [self.ARViewPlaceholder removeFromSuperview];
@@ -149,6 +149,8 @@ countries.
     self.showingMenu = NO;
     
     // Do any additional setup after loading the view.
+    
+    
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     [self.view addGestureRecognizer:tapGestureRecognizer];
     
